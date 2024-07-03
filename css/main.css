@@ -1,0 +1,360 @@
+/* Universal default settings */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px; /* Add horizontal padding for some spacing */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: #212622;
+    padding: 10px 0; /* Vertical padding for the header */
+}
+
+header.closed {
+    height: 80px;
+}
+
+header h1 {
+    color: #fef5e4;
+}
+
+.toggle-nav {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fef5e4;
+    cursor: pointer;
+}
+
+header .btn {
+    text-decoration: none;
+    color: #758477;
+    background-color: #e98f12;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: block;
+    margin-top: 10px;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #758477;
+}
+
+/* About Section Styling */
+.about {
+    background-color: #f4f4f4; /* Background color for the about section */
+    padding: 15px 0; /* Vertical padding */
+}
+
+.about-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 10px; /* Match horizontal padding with the header */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0rem;
+}
+.about h1 {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+.textnowrap{
+    white-space: wrap; 
+}
+
+.about p {
+    line-height: 1.7;
+    font-size: 1.2rem;
+}
+.about-content {
+    flex: 1 1 45%; 
+    background-color:#f4f4f4;
+    padding: 20px;
+}
+
+.about-image {
+    flex: 1 1 100%;
+    text-align: center; 
+}
+
+.about-image img {
+    max-width: 100%; 
+    height: auto;
+}
+
+@media screen and (max-width: 900px) {
+    .about-content {
+        flex: 1 1 100%; 
+    }
+
+    .about-image img {
+        width: 100%; 
+    }
+}
+
+/* Media query for screens with a maximum width of 900px */
+@media screen and (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .container > .header-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        
+    }
+
+    .container > .header-top h1,
+    .container > .header-top .toggle-nav {
+        margin: 0;
+    }
+
+    nav,
+    header .btn {
+        display: none;
+    }
+
+    .toggle-nav {
+        display: block;
+    }
+
+    .container.active nav,
+    .container.active .btn {
+        display: block;
+        width: 100%;
+    }
+
+    .container nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 20px;
+        width: 100%;
+    }
+}
+
+
+
+/*  */
+/* Hero Section Styling */
+.hero {
+    background-color: #212622;
+    color: #fef5e4;
+    padding: 100px 20px; /* Large padding to make the section big */
+    text-align: center;
+}
+
+.hero-container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.hero h4{ 
+    color: #e98f12;
+}
+/*  */
+
+
+/* contact Section Styling */
+.contact {
+    background-color: #fef6e6;
+    color: #fef5e4;
+    padding: 100px 20px; /* Large padding to make the section big */
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.contact h4 {
+    color: #e98f12;
+}
+
+.contact h3,p {
+    color: #181818;
+}
+
+
+/* goal section */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+.goal-section{
+    background-color: #f4f4f4;
+}
+
+  
+.goal-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: grid;
+    gap: 30px 45px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+  }
+
+.headgoal{
+   padding: 0px;
+   margin: 0px;
+   gap: 0px;
+}
+
+  .spangoal {
+    margin-top: 0;
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  @media screen and (max-width:900px) {
+      .spangoal  {
+        grid-template-columns: 1fr;
+        margin-top: 0;
+    }
+
+    .goal-section .goal-container {
+        margin: 0 auto;
+        padding: 1rem 2rem;
+        display: grid;
+        gap: 30px 10px;
+      }
+  }
+
+  
+
+/* Footer Styling */
+.footer-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px; /* Add horizontal padding for some spacing */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer {
+    background-color: #181818;
+    padding: 20px 0; /* Vertical padding for the footer */
+    color: #fef5e4;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer p, footer ul, footer form {
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #758477;
+}
+
+footer form input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+footer form button {
+    padding: 10px 20px;
+    background-color: #e98f12;
+    color: #fef5e4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Media query for screens with a maximum width of 900px */
+@media screen and (max-width: 900px) {
+    .footer-container > div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .hero {
+        border-top: 4px #282d29 solid;
+    }
+}
+
+/* Media query for screens with a minimum width of 901px */
+@media screen and (min-width: 901px) and (max-width: 1279px) {
+    .footer-container > div {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+
+    .footer-container > div:nth-child(3) {
+        width: 100%;
+    }
+}
+
+/* Media query for screens with a minimum width of 1280px */
+@media screen and (min-width: 1280px) {
+    .footer-container > div {
+        width: 32%;
+    }
+}
+
+/* Media query for screens with a minimum width of 901px */
+@media screen and (min-width: 901px) {
+    nav,
+    header .btn {
+        display: block;
+    }
+
+    .toggle-nav {
+        display: none;
+    }
+}
+
+/* Additional media queries for larger screens, if needed */
+@media screen and (min-width: 1280px) {
+    /* Additional styles for screens with a minimum width of 1280px */
+}
+
+@media screen and (min-width: 1536px) {
+    /* Additional styles for screens with a minimum width of 1536px */
+}
