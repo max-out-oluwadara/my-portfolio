@@ -51,3 +51,29 @@ document.addEventListener('DOMContentLoaded', function() {
     header.classList.add('closed');
 });
 
+
+
+
+// Display time in utc
+
+function updateUTCTime() {
+    const now = new Date();
+    const hours = String(now.getUTCHours()).padStart(2, '0');
+    const minutes = String(now.getUTCMinutes()).padStart(2, '0');
+    const seconds = String(now.getUTCSeconds()).padStart(2, '0');
+    const timeString = `${hours}:${minutes}:${seconds} UTC`;
+
+    document.getElementById('time-utc').textContent = timeString;
+  }
+
+  function updateUTCDay() {
+    const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const dayOfWeek = daysOfWeek[new Date().getUTCDay()];
+
+    document.getElementById('day-utc').textContent = dayOfWeek;
+  }
+
+  updateUTCTime();
+  updateUTCDay();
+  setInterval(updateUTCTime, 1000); // Update time every second
+  setInterval(updateUTCDay, 60000); // Update day every minute

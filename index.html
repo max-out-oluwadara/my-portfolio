@@ -45,7 +45,7 @@
 <!-- End Hero Section -->
 
 <!--Start About Section -->
-<section class="about">
+<section class="about" data-testid="aboutme">
     <div class="about-container">
         <div class="about-content nowrap1">
             <!-- First content div -->
@@ -62,15 +62,66 @@
         </div>
         <div class="about-image">
             <!-- Third div with an image -->
-            <img src="/assets/images/oluwadara_900x1095.jpg" alt="About Image">
+            <img data-testid="stackEmail" src="/assets/images/oluwadara_900x1095.jpg " alt="About Image" width="900" height="1095">
         </div>
     </div>
 </section>
 <!--End About Section -->
 
+<!-- Start Slack information section -->
+ <section class="goal-section">
+    <div class="goal-container spangoal">
+        <div data-testid="slackDisplayDiv">
+            <h4 data-testid="slackDisplayNameHeader">Slack Name</h4>
+            <p data-testid="slackDisplayName">it_oluwadara</p>
+        </div>
+
+        <div data-testid="slackEmailDiv">
+            <h4 data-testid="slackEmailHeader">Slack Email</h4>
+            <p data-testid="slackEmail">max_egunjobi@gmail.com</p>
+        </div>
+
+        <divd data-testid="currentDayDiv">
+            <h4 data-testid="currentDayHeader">Current Day</h4>
+            <p id="day-utc" data-testid="currentDay" ></p>
+        </divd>
+
+        <div data-testid="currentTimeUTCDiv">
+            <h4 data-testid="currentTimeUTCHeader">Current Time</h4>
+            <p id="time-utc" data-testid="currentTimeUTC"></p>
+        </div>
+
+        <div data-testid="hngLinkDiv">
+            <a data-testid="hngLink" href="https://hng.tech/learn">
+                HNG Website 
+            </a>
+        </div>
+    
+        <div data-testid="keywordLinkDiv">
+            <a data-testid = keywordLink href="https://keyword.dog">
+                Goto Keyword Website
+            </a>
+        </div>
+    
+        <div data-testid="scrapeanywebDiv">
+            <a data-testid="scrapeanywebLink" href="https://scrapeanyweb.site">
+                     Goto ScrapeanyWeb
+            </a>
+        </div>
+    
+        <div data-testid="githubLinkDiv">
+            <a data-testid="githubLink" href="https://github.com/max-out-oluwadara">
+                Git Profile
+            </a>
+        </div>
+    </div>
+ </section>
+
+
+ <!-- End Slack information section -->
 
    <!-- Start Goal Section -->
-   <section class="goal-section">
+   <section class="goal-section" data-testid="myGoalSection">
     
     <div class="goal-container">
         <div>
