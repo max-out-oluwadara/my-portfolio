@@ -226,7 +226,20 @@ nav ul li a {
 
 
 /* goal section */
-
+.webvisit {
+    text-align: center;
+    text-decoration: none;
+    color: #e98f12; /* Default color */
+    width: 70px;
+    height: 20px;
+  }
+  
+  .webvisit:hover {
+    background-color: #f4f4f4;
+    color: #000; /* Matching color for hover */
+    border: 2px solid  #000;
+    border-radius: 7px;
+  }
 
 .goal-section{
     background-color: #f4f4f4;
